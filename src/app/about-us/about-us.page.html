@@ -1,11 +1,82 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>about-us</ion-title>
+    <ion-buttons slot="start">
+      <!-- link back to sign up page -->
+      <ion-back-button defaultHref="/setting"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card class="ion-text-center">
+    <ion-card-title>ABOUT US</ion-card-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card-subtitle>The only app you can get ART Kit MOH-approved with a 100% satisfaction guarantee.</ion-card-subtitle>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <form>
+      <ion-grid>
+        <ion-row>
+          <ion-col size-sm="6" offset-sm="3">
+            <ion-item>
+              <ion-label position="floating">NAME: </ion-label>
+              <ion-input type="text" autocomplete autocorrect></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-sm="6" offset-sm="3">
+            <ion-item>
+              <ion-label position="floating">CONTACT NO: </ion-label>
+              <ion-input type="text" autocomplete autocorrect></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-sm="6" offset-sm="3">
+            <ion-item>
+              <ion-label position="floating">EMAIL: </ion-label>
+              <ion-input type="text" autocomplete autocorrect></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size-sm="6" offset-sm="3">
+            <ion-item>
+              <ion-label position="floating">ISSUES: </ion-label>
+              <ion-input type="text" autocomplete autocorrect></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-button>SENT</ion-button>
+      </ion-grid>
+    </form>
+  </ion-card>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <h5>LOCATION:</h5>
+          <h6>JALAN SATU, RIMBA, NBD, BE2111</h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-text>
+          <h5>WEB DEVELOPER:</h5>
+          <h6>DAHLIA BINTI SUNGAI [20FTT1448]</h6>
+          <h6>NUR HANA BINTI BUJANG [20FTT1462]</h6>
+          <h6>NURUL 'AZIIZAH BINTI HAJI ZULKIFLI [20FTT1812]</h6>
+          <h6>NUR MUZAINAH BINTI SANIB BAHAR [20FTT1814]</h6>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 
 <ion-tabs>
