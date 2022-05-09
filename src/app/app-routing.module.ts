@@ -19,10 +19,7 @@ const routes: Routes = [
     path: 'category',
     loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
   },
-  {
-    path: 'product-detail',
-    loadChildren: () => import('./product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
-  },
+
   {
     path: 'cart',
     loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
@@ -51,6 +48,7 @@ const routes: Routes = [
     path: 'terms-and-conditions',
     loadChildren: () => import('./terms-and-conditions/terms-and-conditions.module').then( m => m.TermsAndConditionsPageModule)
   },
+
 ];
 
 @NgModule({

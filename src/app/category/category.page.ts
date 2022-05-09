@@ -9,10 +9,12 @@ import { CategoryService } from './category.service';
 })
 export class CategoryPage implements OnInit {
 
-  category: categories[];
+  category: categories[]; //must be empty sebab ya fetch dari service
 
 constructor(private CategoryService: CategoryService) { }
 
+
+//assigning the data 
   ngOnInit() {
     this.category = this.CategoryService.getAllcategories();
   }
