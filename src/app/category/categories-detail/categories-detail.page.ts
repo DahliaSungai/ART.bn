@@ -10,19 +10,17 @@ import { CategoryService } from '../category.service';
 })
 export class CategoriesDetailPage implements OnInit {
 
-
 //yang ani untuk load data sama fetch data inside html atu
 loadedCategories: categories;
 
-
-
-  //supaya dapat access ke url linl (Art1, Art2, Art3 and Art4)
+  //supaya dapat access ke url linl (Art1, Art2, Art3)
   constructor(private activatedRoute: ActivatedRoute,
               private categoryService:CategoryService) { }
 
   ngOnInit() {
+    //kalau categoriesId inda exsit ya ke error page
     this.activatedRoute.paramMap.subscribe(paramMap => {
-      if(!paramMap.has('categories.id')){
+      if(!paramMap.has('categoriesId')){
         //redirect
         return;
       }

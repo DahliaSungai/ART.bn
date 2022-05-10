@@ -1,9 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>categories-detail</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{loadedCategories.title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-img [src]="loadedCategories.imageUrl"></ion-img>
+  <ion-button href="/cart" color="primary" class="ion-margin">Purchase</ion-button>
 </ion-content>
+
+

@@ -1,6 +1,7 @@
 export class categories {
     constructor(public id: string,
+                public title: string,
+                public description: string,
                 public imageUrl: string,
-                public title: string){}
+                public price: number){}
 }
-
