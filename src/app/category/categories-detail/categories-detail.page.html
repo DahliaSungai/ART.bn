@@ -9,9 +9,12 @@
 
 <ion-content class="ion-text-center">
 <ion-card>
-  <ion-card-content >
-    <ion-img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" [src]="loadedCategories.imageUrl"></ion-img>
+  <ion-img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" [src]="loadedCategories.imageUrl"></ion-img>
+  <ion-card-header>
+    <ion-card-subtitle>{{loadedCategories.description}}</ion-card-subtitle>
+    <ion-card-label> {{loadedCategories.Specification}} </ion-card-label>
+    <ion-card-content> ${{loadedCategories.price}}.00 </ion-card-content>
+  </ion-card-header>
   <ion-button href="/cart" color="primary" class="ion-text-center">Purchase</ion-button>
-  </ion-card-content>
 </ion-card>
 </ion-content>
