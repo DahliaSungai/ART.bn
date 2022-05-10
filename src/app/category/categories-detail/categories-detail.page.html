@@ -9,14 +9,14 @@
 
 <ion-content class="ion-text-center">
 <ion-card>
-  <ion-card-content >
-    <ion-img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" [src]="loadedCategories.imageUrl"></ion-img>
+  <ion-img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" [src]="loadedCategories.imageUrl"></ion-img>
+  <ion-card-header>
+    <ion-card-subtitle>{{loadedCategories.description}}</ion-card-subtitle>
+    <ion-text> 
+      <h6>{{loadedCategories.Specification}}</h6> 
+    </ion-text>
+    <ion-card-content> ${{loadedCategories.price}}.00 </ion-card-content>
+  </ion-card-header>
   <ion-button href="/cart" color="primary" class="ion-text-center">Purchase</ion-button>
-  </ion-card-content>
 </ion-card>
 </ion-content>
-
-<!-- <img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" src="https://cdn.shopify.com/s/files/1/0175/8496/articles/Donate_Header_1512x.jpg?v=1611161753" alt="">
-    <img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" src="https://www.gogreendrop.com/wp-content/uploads/2020/10/UsC2PoMWIfSc71UFpOfqNKDui2UPUu5R1600808257.jpg" alt="">
-    <img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" src="https://www.wuntumedia.com/wp-content/uploads/2021/11/food-donations-scaled-1-2048x1366.jpg" alt=""> -->
-
