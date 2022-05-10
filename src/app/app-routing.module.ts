@@ -16,22 +16,25 @@ const routes: Routes = [
     loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
   },
   {
-    path: 'category',
-    loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
+    path: 'artbn',
+    loadChildren: () => import('./artbn/artbn.module').then( m => m.ArtbnPageModule)
   },
-
-  {
-    path: 'cart',
-    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
-  },
+  // {
+  //   path: 'category',
+  //   loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
+  // },
+  // {
+  //   path: 'cart',
+  //   loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  // },
   {
     path: 'payment',
     loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
   },
-  {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },
+  // {
+  //   path: 'profile',
+  //   loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  // },
   {
     path: 'setting',
     loadChildren: () => import('./setting/setting.module').then( m => m.SettingPageModule)
