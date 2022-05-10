@@ -7,6 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
+<<<<<<< HEAD
 <!-- Searchbar with cancel button shown on focus -->
 <ion-searchbar showCancelButton="focus"></ion-searchbar>
 
@@ -25,3 +26,24 @@
   </ion-list> 
 </ion-content>
 
+=======
+
+<!-- Searchbar with cancel button shown on focus -->
+<ion-searchbar showCancelButton="focus"></ion-searchbar>
+
+
+<ion-content slot="start">
+  <ion-item *ngFor="let categories of category">
+    <ion-item>
+      <ion-img style="width: 180px; height: 180px; display: inline-block; margin: 25px 10px;" [src]="categories.imageUrl"></ion-img>
+    </ion-item>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle> {{categories.title}} </ion-card-subtitle>
+      <ion-card-title color="success">{{ categories.status}}</ion-card-title>
+      <ion-button [routerLink]="['./',categories.id]"> View Details</ion-button>
+    </ion-card-header>
+  </ion-card>
+  </ion-item>
+</ion-content>
+>>>>>>> 075885ca0e114bb2bedd76e175300109035c4312
