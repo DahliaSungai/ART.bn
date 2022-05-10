@@ -1,6 +1,10 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
+<<<<<<< HEAD
+=======
+      <ion-back-button defaultHref="/category"></ion-back-button>
+>>>>>>> 10ee55cec4ad619c384fc5a435b3be6901474c66
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{loadedCategories.title}}</ion-title>
@@ -9,7 +13,11 @@
 
 <ion-content>
   <ion-img [src]="loadedCategories.imageUrl"></ion-img>
+<<<<<<< HEAD
   <ion-button href="/cart" color="primary" class="ion-margin">Purchase</ion-button>
+=======
+  <ion-button color="primary" class="ion-margin" (click)="onBookPlace()">Purchase</ion-button>
+>>>>>>> 10ee55cec4ad619c384fc5a435b3be6901474c66
 </ion-content>
 
 
